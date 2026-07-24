@@ -152,6 +152,36 @@ cd ../04_training && sbatch submit_job.sh
 cd ../05_evaluation && sbatch submit_eval_job.sh
 ```
 
+## Reproducibility
+
+MoVoC_MT is **partially reproducible**: data splitting is seeded and
+deterministic, but exact result recovery is not guaranteed.
+
+- **Seeded**: dataset shuffling and split (`SEED=42`,
+  `02_cleaning/clean_amharic_corpus.py:30`) and training data shuffling
+  (`--seed 42`, `04_training/train_mt.py:122,173`).
+- **Not seeded**: model weight initialization (`03_model/build_model.py`
+  calls `MarianMTModel(config)` with no `torch.manual_seed`/`set_seed`
+  anywhere in the file) -- the reported metrics correspond to one
+  unrepeatable initialization draw.
+- **Not deterministic**: training uses fp16 mixed precision (`fp16=True`)
+  with no `torch.use_deterministic_algorithms` or fixed cuDNN algorithm
+  selection.
+- **Not pinned**: no `requirements.txt`/lockfile is committed; reported
+  figures were produced with `transformers==4.57.6`, `torch==2.9.0+cu128`,
+  `datasets==5.0.0`, `tokenizers==0.22.2`, `sacrebleu==2.6.0`.
+- **External, unversioned dependencies**: the MoVoC_Tok tokenizer file,
+  the Tigrinya cleaned corpus, and the Tatoeba Tigre eval set are all
+  referenced via absolute paths outside this repository, with no
+  checksum or pinned commit.
+
+Reported training run (SLURM job 52623, single A100,
+`04_training/movoc_mt_train.out`): batch size 32, peak LR 5e-05 (linear
+decay, 500 warmup steps), grad-norm range 1.3269047-5.6101074 across
+4,158 finite logged steps plus 2 `inf` events (fp16 loss-scaler
+overflow, steps ≈64,800 and ≈331,600), throughput 502.771 samples/sec,
+training-loop runtime 26,479.75 s (7h 21m 20s).
+
 ## Limitations
 
 - **Amharic corpus is capped at 1.5M raw NLLB lines** (of 16.1M available),
