@@ -175,6 +175,11 @@ deterministic, but exact result recovery is not guaranteed.
   referenced via absolute paths outside this repository, with no
   checksum or pinned commit.
 
+This section is also published on
+[GitHub](https://github.com/hailaykidu/MoVoC_MT) (source of truth) and
+mirrored, in condensed form, on the
+[Hugging Face model card](https://huggingface.co/Hailay/movoc-mt-en-am-ti).
+
 Reported training run (SLURM job 52623, single A100,
 `04_training/movoc_mt_train.out`): batch size 32, peak LR 5e-05 (linear
 decay, 500 warmup steps), grad-norm range 1.3269047-5.6101074 across
