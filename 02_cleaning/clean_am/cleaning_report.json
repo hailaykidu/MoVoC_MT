@@ -1,0 +1,8 @@
+{
+  "raw_lines": 1500000,
+  "after_line_filters": 1496278,
+  "after_exact_dedup": 1457284,
+  "after_near_dup_dedup": 1080567,
+  "train": 1078567,
+  "dev": 2000
+}

@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+
+# large intermediate/raw corpora -- regenerate via 02_cleaning/clean_amharic_corpus.py
+# (Amharic) or reuse EnTiMT/02_cleaning/clean/ directly (Tigrinya) rather than
+# storing ~150MB of parallel text here
+02_cleaning/clean_am/*.en
+02_cleaning/clean_am/*.am
+02_cleaning/clean_ti/*.en
+02_cleaning/clean_ti/*.ti
+
+# model weights -- live on the Hugging Face Hub instead
+03_model/init_model/
+04_training/mt_output/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# SLURM raw stdout/stderr logs -- large and operational
+*.out
+*.err

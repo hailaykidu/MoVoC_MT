@@ -1,0 +1,116 @@
+{
+  "eval_set": "Tatoeba en-tig (via HornMT), 45 pairs -- zero-shot, Tigre absent from training",
+  "n_pairs": 43,
+  "en_to_tig": {
+    "bleu": 2.7126890928489726,
+    "chrf": 19.40528491265948,
+    "examples": [
+      {
+        "source": "his stomach is weak",
+        "hypothesis": "ከብዲ ከብዲ ከብዲ ከብዲ ከብዲ ከብዲ ከብዲ ከብዲ እዩ።",
+        "reference": "ከብዱ ረቃቅ ታ"
+      },
+      {
+        "source": "There go the twelve bars blues.",
+        "hypothesis": "ኣብኡ ድማ ዓሰርተው ዓሰርተው ክልተ ኽፍልታት ኪዀና እየን።",
+        "reference": "እተን ሰማያዊ ዝሕብረን ዓሰርተው ክልተ ሓጺናት እነሀለዋ።"
+      },
+      {
+        "source": "We sang songs in chorus.",
+        "hypothesis": "ኣብ chorus መዝሙር መዝሙር እናዘመርና ንዘምር።",
+        "reference": "ተደጋጋሚ መዝሙር ዘሚርና።"
+      },
+      {
+        "source": "This new product of ours is a serious blow to our rival company.",
+        "hypothesis": "እዚ ሓድሽ ወለዶ'ዚ ኣብ ልዕሊ'ቲ ኣብ ልዕሊ'ቲ ናትና ትካልና ዘሎ ዓቢ ተራ'ዩ።",
+        "reference": "እቲ ሓድሽ ፍርያትና፡ ነታ መወዳደርትና ኩባንያ ከቢድ ውቅዒት እዩ።"
+      },
+      {
+        "source": "Technology has failed to ease the conflict between man and nature.",
+        "hypothesis": "ተክኖሎጂ፡ ኣብ መንጎ ሰብኣይን ተፈጥሮን ዘሎ ግጭት፡ ነቲ ኣብ መንጎ ሰብን ተፈጥሮን ዘሎ ግጭት ደው ንምባል ኣይተዓወተን።",
+        "reference": "ቴክኖሎጂ፡ ነቲ ኣብ መንጎ ወዲ ሰብን ተፈጥሮን ዘሎ ግጭት ከህድኦ ኣይከኣለን።"
+      },
+      {
+        "source": "My papa said no.",
+        "hypothesis": "ጳ ጳዉሎስ፡ \"ኣይፋል\" ኢሉ ተዛሪቡ ነይሩ።",
+        "reference": "ኣቦይ ኣይፋል ኢሉ።"
+      },
+      {
+        "source": "The king was famous for his splendid palace.",
+        "hypothesis": "እቲ ንጉስ፡ ንዅሽሽ ቤተ መቕደሱ ኣዝዩ ፍሉጥ እዩ ነይሩ።",
+        "reference": "እቲ ንጉስ ብሰንኪ እቲ ድንቂ ኣደራሹ ውሩይ ኮነ።"
+      },
+      {
+        "source": "May I take your size, madam?",
+        "hypothesis": "ኣነ ኸ ኽጸድቕዶ ኽገብሮ እየ?",
+        "reference": "ዝሓብተይ ዓቐንኪዶ ኽወስድ?"
+      },
+      {
+        "source": "Please return one set to us with your signature.",
+        "hypothesis": "በጃኻ ሓደ ሰብ ምሳና ምሳና ምስ ተመዝገብካ ተራኸብ።",
+        "reference": "ክታምካ ዝገበርካሉ ሓደ ክፋል ብኽብረትካ ናባና ስደዶ።"
+      },
+      {
+        "source": "The country's foreign trade depends entirely on this port.",
+        "hypothesis": "ናይ ወጻኢ ንግዲ ኣብ'ዚ ዞባ'ዚ ምሉእ ብምሉእ ኣብ'ዚ ዞባ'ዚ እዩ ዝምርኮስ።",
+        "reference": "ጠቕላላ ናይታ ሃገር ናይ ወጻኢ ንግዲ፡ ኣብዚ ወደብ'ዚ እተመርኮሰ እዩ።"
+      }
+    ]
+  },
+  "tig_to_en": {
+    "bleu": 7.6282338902939175,
+    "chrf": 32.187100652498145,
+    "examples": [
+      {
+        "source": "ከብዱ ረቃቅ ታ",
+        "hypothesis": "He's got a lot of scorns in his mouth.",
+        "reference": "his stomach is weak"
+      },
+      {
+        "source": "እተን ሰማያዊ ዝሕብረን ዓሰርተው ክልተ ሓጺናት እነሀለዋ።",
+        "hypothesis": "There were twelve stars of the blue and the twelve horns.",
+        "reference": "There go the twelve bars blues."
+      },
+      {
+        "source": "ተደጋጋሚ መዝሙር ዘሚርና።",
+        "hypothesis": "We've repeated a series of songs.",
+        "reference": "We sang songs in chorus."
+      },
+      {
+        "source": "እቲ ሓድሽ ፍርያትና፡ ነታ መወዳደርትና ኩባንያ ከቢድ ውቅዒት እዩ።",
+        "hypothesis": "Our new products are hard to identify the company's company.",
+        "reference": "This new product of ours is a serious blow to our rival company."
+      },
+      {
+        "source": "ቴክኖሎጂ፡ ነቲ ኣብ መንጎ ወዲ ሰብን ተፈጥሮን ዘሎ ግጭት ከህድኦ ኣይከኣለን።",
+        "hypothesis": "Technology can't stop the conflict between humans and nature.",
+        "reference": "Technology has failed to ease the conflict between man and nature."
+      },
+      {
+        "source": "ኣቦይ ኣይፋል ኢሉ።",
+        "hypothesis": "My father said he wasn't.",
+        "reference": "My papa said no."
+      },
+      {
+        "source": "እቲ ንጉስ ብሰንኪ እቲ ድንቂ ኣደራሹ ውሩይ ኮነ።",
+        "hypothesis": "The king became famous because of his great mother's house.",
+        "reference": "The king was famous for his splendid palace."
+      },
+      {
+        "source": "ዝሓብተይ ዓቐንኪዶ ኽወስድ?",
+        "hypothesis": "Will I be able to take my body?",
+        "reference": "May I take your size, madam?"
+      },
+      {
+        "source": "ክታምካ ዝገበርካሉ ሓደ ክፋል ብኽብረትካ ናባና ስደዶ።",
+        "hypothesis": "Please send us a part of the bill you've made.",
+        "reference": "Please return one set to us with your signature."
+      },
+      {
+        "source": "ጠቕላላ ናይታ ሃገር ናይ ወጻኢ ንግዲ፡ ኣብዚ ወደብ'ዚ እተመርኮሰ እዩ።",
+        "hypothesis": "The whole country's foreign trade is dependent on this port.",
+        "reference": "The country's foreign trade depends entirely on this port."
+      }
+    ]
+  }
+}
