@@ -10,6 +10,8 @@ real cross-lingual transfer. This is the kind of downstream MT validation the
 MoVoC paper's own Table 3 describes, but which the MoVoC project itself never
 had until now.
 
+Model: [Hailay/movoc-mt-en-am-ti](https://huggingface.co/Hailay/movoc-mt-en-am-ti) on the Hugging Face Hub.
+
 ## Architecture
 
 Matches the exact architecture of the paper's own original MarianMT run
