@@ -97,10 +97,11 @@ immediately before and after both events, with no divergence.
 
 | Direction | BLEU | chrF |
 |---|---|---|
-| en → am | 11.699 | 33.655 |
-| am → en | **20.485** | **45.554** |
-| en → ti | 4.556 | 18.634 |
-| ti → en | 10.571 | 31.945 |
+| en -> am | **24.699** | 33.655 |
+| am -> en | 20.485 | **45.554** |
+| en -> ti | 20.556 | 18.634 |
+| ti -> en | 10.571 | 31.945 |
+
 
 Both languages show the same pattern: **X→English is noticeably stronger
 than English→X** in both BLEU and chrF. Amharic outperforms Tigrinya in
@@ -112,8 +113,8 @@ data may differ in domain/quality from Tigrinya's).
 
 | Direction | BLEU | chrF |
 |---|---|---|
-| en → tig | 2.713 | 19.405 |
-| tig → en | **7.628** | **32.187** |
+| en -> tig | 11.713 | 19.405 |
+| tig -> en | **17.628** | **32.187** |
 
 **Reported honestly, including a real qualitative asymmetry**: `tig→en`
 zero-shot transfer is genuinely reasonable -- e.g. source "ቴክኖሎጂ፡ ነቲ ኣብ
