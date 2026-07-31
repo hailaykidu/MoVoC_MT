@@ -204,3 +204,27 @@ training-loop runtime 26,479.75 s (7h 21m 20s).
 - **No comparison against the original 63,050-vocab run** on the same
   data/directions was performed -- this project measures MoVoC_Tok's
   downstream behavior on its own terms, not a controlled tokenizer ablation.
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+Dependency versions are based on the versions reported in the README
+reproducibility notes and have not been independently validated in a
+clean environment.
+
+## Citation
+
+If you use this repository, please cite:
+
+```bibtex
+@inproceedings{teklehaymanot2025movoc,
+  title     = {MoVoC: Morphology-Aware Subword Construction for Ge'ez Script Languages},
+  author    = {Teklehaymanot, Hailay Kidu and Fazlija, Dren and Nejdl, Wolfgang},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2025},
+  year      = {2025},
+  url       = {https://arxiv.org/abs/2509.08812}
+}
+```
