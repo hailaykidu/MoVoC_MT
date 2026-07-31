@@ -1,0 +1,8 @@
+# Dependency versions are based on the versions reported in the README
+# reproducibility notes and have not been independently validated in a
+# clean environment.
+transformers==4.57.6
+torch==2.9.0
+datasets==5.0.0
+tokenizers==0.22.2
+sacrebleu==2.6.0
